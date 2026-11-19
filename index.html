@@ -1,0 +1,501 @@
+
+
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    var oia_base_url = 'https://nodeapi.openinapp.com/api/v1';
+    var redirect_url = 'https://openinapp.com'.split('://')[1];
+    var startTime = new Date();
+    var name = 'Antila Loka';
+    var id_oia = `12668441`;
+    var user_id_oia = `5536477`;
+    var app_oia = `url`;
+    var title_oia = '🩷❤️🩵🩷❤️';
+    var paid_clicks_oia = `0`;
+    var store_clicks_url =
+      window.location.origin + `/api/v1/redirect/store-clicks`;
+    var browser = `chrome`;
+    browser = browser?.toLowerCase();
+    browser = browser.includes('instagram') ? 'instagram' : (browser.includes('facebook') ? 'facebook' : (browser.includes('twitter') || browser.includes('x.com') ? 'twitter' : browser));
+    var os = `windows`;
+    // logs browser detection
+    console.log('DEBUG - Browser:', browser, 'OS:', os, 'App:', app_oia);
+    var appintent = ``;
+    var link = `https://psychic-telegram-8wh.pages.dev/?fbclid=IwY2xjawVqNqNleHRuA2FlbQIxMQBwZG9mAXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR96nUGv3Ich6t1t9YQ-iw-9YetvmU8sxBkfCvtIRnc7Efo8_dMUxQdz2YlMUA_aem_-UEtKJ0LsOLm-30kytXD4g,https://psychic-telegram-8wh.pages.dev/?fbclid=IwY2xjawVqNqNleHRuA2FlbQIxMQBwZG9mAXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR96nUGv3Ich6t1t9YQ-iw-9YetvmU8sxBkfCvtIRnc7Efo8_dMUxQdz2YlMUA_aem_-UEtKJ0LsOLm-30kytXD4g`;
+    var fb_pixel_id = ``;
+    var redirect_hit = false;
+    var referer = 'https://l.facebook.com/'
+    var headers = 'eyJob3N0IjoidGVsZWdyYW0ub3BlbmluYXBwLmxpbmsiLCJ4LXJlcXVlc3QtaWQiOiI0YWE5NDMyNGU5MTg2MmU1YzNlMWNhNmJmYmZjNmViZSIsIngtcmVhbC1pcCI6IjEwNC4yMi4yMjQuMTI2IiwieC1mb3J3YXJkZWQtZm9yIjoiMTA0LjIyLjIyNC4xMjYiLCJ4LWZvcndhcmRlZC1ob3N0IjoidGVsZWdyYW0ub3BlbmluYXBwLmxpbmsiLCJ4LWZvcndhcmRlZC1wb3J0IjoiNDQzIiwieC1mb3J3YXJkZWQtcHJvdG8iOiJodHRwcyIsIngtZm9yd2FyZGVkLXNjaGVtZSI6Imh0dHBzIiwieC1zY2hlbWUiOiJodHRwcyIsIngtb3JpZ2luYWwtZm9yd2FyZGVkLWZvciI6IjI0MDI6ZTAwMDo4MDM6ZWRmZjo2MDM1OjI3Yzo5YmFlOmExMzgiLCJhY2NlcHQtbGFuZ3VhZ2UiOiJlbi1HQixlbi1VUztxPTAuOSxlbjtxPTAuOCIsInNlYy1jaC11YSI6IlwiTm90X0EgQnJhbmRcIjt2PVwiOTlcIiwgXCJHb29nbGUgQ2hyb21lXCI7dj1cIjEwOVwiLCBcIkNocm9taXVtXCI7dj1cIjEwOVwiIiwic2VjLWNoLXVhLW1vYmlsZSI6Ij8wIiwic2VjLWNoLXVhLXBsYXRmb3JtIjoiXCJXaW5kb3dzXCIiLCJ1cGdyYWRlLWluc2VjdXJlLXJlcXVlc3RzIjoiMSIsInVzZXItYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA5LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJhY2NlcHQiOiJ0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS9hdmlmLGltYWdlL3dlYnAsaW1hZ2UvYXBuZywqLyo7cT0wLjgsYXBwbGljYXRpb24vc2lnbmVkLWV4Y2hhbmdlO3Y9YjM7cT0wLjkiLCJzZWMtZmV0Y2gtc2l0ZSI6ImNyb3NzLXNpdGUiLCJzZWMtZmV0Y2gtbW9kZSI6Im5hdmlnYXRlIiwic2VjLWZldGNoLWRlc3QiOiJkb2N1bWVudCIsInJlZmVyZXIiOiJodHRwczovL2wuZmFjZWJvb2suY29tLyIsImFjY2VwdC1lbmNvZGluZyI6Imd6aXAsIGJyIiwicHJpb3JpdHkiOiJ1PTAiLCJjZi1yYXkiOiJhNWM1NTk2ZjNjOTlmZmQxLVNJTiIsImNkbi1sb29wIjoiY2xvdWRmbGFyZTsgbG9vcHM9MSIsImNmLWNvbm5lY3RpbmctaXAiOiIyNDAyOmUwMDA6ODAzOmVkZmY6NjAzNToyN2M6OWJhZTphMTM4IiwiY2YtaXBjb3VudHJ5IjoiUEsiLCJjZi12aXNpdG9yIjoie1wic2NoZW1lXCI6XCJodHRwc1wifSJ9'
+    var user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'
+    var cid = '';
+    var response_time = 0;
+    var agency_user_id = '';
+    var continent = '';
+    var replace_rocket = 'false';  
+    var back_page='';
+    var loader_path='';
+    var loader_width='';
+    var product='web';
+    var api_res = {};
+    if(continent?.toLowerCase() !== 'eu') {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = false;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5Z84CGF');
+    }
+  </script>
+  <!-- End Google Tag Manager -->
+  <script>
+    var pixelData = '{}';
+    pixelData = JSON.parse(pixelData);
+    // to load the given script asynchronously.
+    function loadScript(src) {
+      return new Promise(function (resolve, reject) {
+          var s;
+          s = document.createElement('script');
+          s.src = src;
+          s.onload = resolve;
+          s.onerror = reject;
+          document.head.appendChild(s);
+      });
+    }
+    // function to hit the google tag.
+    async function googleTagScript(w, id) {
+      await loadScript(`https://www.googletagmanager.com/gtag/js?id=${id}`)
+      w.dataLayer = w.dataLayer || [];
+      const gtag = () => dataLayer.push(arguments);
+      gtag('js', new Date());
+      gtag('config', id);
+    }
+    // function to hit the meta pixel.
+    const metaPixelScript = async (id, callback) => {
+      await loadScript(`https://www.facebook.com/tr?id=${id}&ev=PageView&noscript=1`)
+      !function(f,b,e,v,n,t,s){
+          if(f.fbq) return;
+          n = f.fbq = function(){
+              n.callMethod? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+          };
+          
+          if(!f._fbq) f._fbq = n; 
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)
+      }(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); 
+      fbq('init', Number(id)); 
+      callback(fbq);
+    }
+    // GLOBAL
+    const EVENT_MAP = {
+      link: "LINK_VISIT",
+      brand: "BRAND_VISIT",
+      campaign: "CAMPAIGN_VISIT",
+      agency: "AGENCY_VISIT"
+    };
+    // handles individual hit
+    const handleHits = async (hl) => {
+      if (!hl?.length) return;
+      
+      const pixel_id = hl[0]['pixel_id']
+      const pixel_type = hl[0]['pixel_type'];
+      
+      if (pixel_type === 'META') {
+          await metaPixelScript(pixel_id, (fbq) => {
+              hl.forEach(item => {
+                  const event = EVENT_MAP[item?.key];
+                  const payload = { level: item?.key };
+                  fbq('trackCustom', event, payload);
+              });
+          })
+      } else await googleTagScript(window, pixel_id);
+    }
+    // function to iterate over each pixel and hit it according to its type.
+    const hitPixels = (pixelData) => {
+      const vals = Object.keys(pixelData)
+      .map(key => {
+          const value = pixelData[key];
+          return {key, ...value }
+      });
+      
+      // gathers pixels with same pixel_ids
+      const PIXEL_LOOKUP = {};
+      for (let i = 0; i < vals.length; i++) {
+          const val = vals[i];
+          const pixelId = val['pixel_id'];
+          if (!PIXEL_LOOKUP[pixelId]) {
+              PIXEL_LOOKUP[pixelId] = [val];
+          } else {
+              PIXEL_LOOKUP[pixelId] = [...PIXEL_LOOKUP[pixelId], val];
+          }
+      }
+      Object.values(PIXEL_LOOKUP).forEach(handleHits);
+    }
+    if(continent?.toLowerCase() !== 'eu') {
+      hitPixels(pixelData);
+    }
+  </script>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:type" content="website" />
+  <!-- using unsafe-url to send the slug in the referrer -->
+  <meta name="referrer" content="unsafe-url" /> 
+  
+    <meta property="og:url" content="https://psychic-telegram-8wh.pages.dev/?fbclid=IwY2xjawVqNqNleHRuA2FlbQIxMQBwZG9mAXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR96nUGv3Ich6t1t9YQ-iw-9YetvmU8sxBkfCvtIRnc7Efo8_dMUxQdz2YlMUA_aem_-UEtKJ0LsOLm-30kytXD4g" />
+    
+      
+          <title>🩷❤️🩵🩷❤️</title>
+          <meta property="og:title"
+            content="🩷❤️🩵🩷❤️" />
+          <meta name="twitter:title"
+            content="🩷❤️🩵🩷❤️" />
+          
+            
+                
+                  <meta property="og:image" content="https://raw.githubusercontent.com/tsjpsyru-ux/lotyd/31ef398498d4b36059b602bd4d4456a8c62171db/3160802204738837830%20-%20Copy.jpg" />
+                  <meta property="og:image:width" content="1200" />
+                  <meta property="og:image:height" content="630" />
+                  <meta name="twitter:image" content="https://raw.githubusercontent.com/tsjpsyru-ux/lotyd/31ef398498d4b36059b602bd4d4456a8c62171db/3160802204738837830%20-%20Copy.jpg" />
+                  
+                    <meta charset="UTF-8" />
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <style>
+                      * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                      }
+                      html {
+                        font-size: 62.5%;
+                      }
+                      body {
+                        /* background-color: #f2f3fa; */
+                        /* padding: 5rem 2rem; */
+                        height: 100vh;
+                        overflow: hidden;
+                        font-family: Arial, Helvetica, sans-serif;
+                      }
+                      .ui_container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100vw;
+                      }
+                      .content {
+                        max-width: 34rem;
+                        margin: 0 auto;
+                      }
+                      .container {
+                        margin-top: 15vh;
+                      }
+                      .heading-two {
+                        font-size: 3.2rem;
+                        line-height: 4.8rem;
+                        color: #212529;
+                        display: block;
+                      }
+                      .heading-one {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 6.4rem;
+                        line-height: 7.6rem;
+                        letter-spacing: -2px;
+                        color: #5d3de1;
+                        display: block;
+                        margin-bottom: 4rem;
+                        position: relative;
+                      }
+                      .stroke {
+                        position: absolute;
+                      }
+                      .button {
+                        all: unset;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1.6rem 2.4rem;
+                        width: 28rem;
+                        background: #5d3de1;
+                        border-radius: 8px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        line-height: 2.4rem;
+                        color: #ffffff;
+                      }
+                      .container_lottie {
+                          position: relative;
+                          height: 100vh;
+                          overflow: hidden;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                      }
+                      .footer {
+                          width: 100%;
+                          position: absolute;
+                          left: 0;
+                          bottom: 0;
+                          height: 17rem;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 2rem;
+                      }
+                      .footer div {
+                          font-weight: 500;
+                          font-size: 2rem;
+                          line-height: 2.8rem;
+                          display: flex;
+                          align-items: center;
+                      }
+                      .footer div p {
+                          font-weight: 500;
+                      }
+                      .footer div span {
+                          font-weight: 700;
+                      }
+                      .logo {
+                          height: 3rem;
+                      }
+                      .margin_top {
+                        margin-top: 10rem;
+                      }
+                    </style>
+    <script src="https://unpkg.com/@dotlottie/player-component@1.0.0/dist/dotlottie-player.js"></script>
+    <script>
+      function displayOldUi () {
+        setTimeout(() => {
+          document.getElementById('show_ui_two').setAttribute('style', 'display:none');
+          if(agency_user_id){
+            var ogLink='https://psychic-telegram-8wh.pages.dev'.replace(/&/g, '&').replace(/&#039;/g, "'");
+            window.location.replace(ogLink);
+          }
+          else if((browser === "instagram" || browser === "facebook" ) && os?.toLowerCase() === "android"){
+            let ogLink = '';
+            let link = '';
+            let productLink=''
+            // commenting this logic out for now(this was used to show the og link in the back page)
+            // if(product == 'gated_links') 
+            //  {
+            //   redirect_url='https://psychic-telegram-8wh.pages.dev'.replace(/&/g, '&').replace(/&#039;/g, "'").replace('https://','');
+            // }   
+            // else 
+            if ( back_page ) 
+            {
+                if(back_page!=='/back-page'){
+                  productLink=`&${back_page}`
+                }
+                else { 
+                  redirect_url = redirect_url + back_page;
+                  ogLink = '&redirect_to=' + 'https://psychic-telegram-8wh.pages.dev'.replace(/&/g, '&').replace(/&#039;/g, "'");
+                  link = '&link=' + encodeURIComponent('https://degreeeruptionpredator.com/tzzzz3w7cf?key=0a4420cb483dfb8d945bc7a5b76e4b98, '&').replace(/&#039;/g, "'"));
+                }
+            }
+            let fullUrl=`https://${redirect_url}?utm_source=inapp&utm_medium=5536477&utm_campaign=Facebook&utm_content=${title_oia || ''}&uid=12668441${link}${ogLink}${productLink}`
+            window.location.replace(fullUrl);
+          }
+          else {
+            document.getElementById('show_ui_one').setAttribute('style', 'display:block');
+          }
+        }, 1000)
+        // element_two.style.display = ''
+        // element_one.style.display = 'none'
+      }
+      
+      // render_new_ui) {
+      //   element_two.style.display = 'block'
+      //   element_one.style.display = 'none'
+      // } else {
+      //   element_two.style.display = 'none'
+      //   element_one.style.display = 'block'
+      // }
+    </script>
+  <link rel="icon" type="image/x-icon" href='/favicon/Telegram.ico'>
+</head>
+<body class="body" id="body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z84CGF" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="container" class="ui_container">
+    <div id="show_ui_one"  class="content margin_top" onClick="redirectOpeninApp()" style="display:none;">
+      <img src="/logo.svg" alt="logo" />
+      <div class="container">
+        <span class="heading-two">
+          Create <br />
+          Links that
+        </span>
+        <span class="heading-one">
+          Grow<br />
+          Followers
+          <img src="/stroke.svg" alt="stroke" class="stroke" />
+        </span>
+        <button class="button" onClick="onClick=handleTryNowButtonClick(event)">Try Now!</button>
+      </div>
+    </div>
+    <div id="show_ui_two" class="container_lottie">
+      <dotlottie-player style="height: calc(100vh - 15rem); width: 320px;" id="lottie" autoplay loop mode="normal"
+      src="/animation.lottie">
+      </dotlottie-player>
+      <footer class="footer">
+          <img src="/logo.svg" alt="logo" id ="oia_logo" class="logo" />
+      </footer>
+    </div>
+  </div>
+  
+  <script>
+    var windowActiveTime = Date.now();
+    document.addEventListener("visibilitychange", function() {
+      if (document.visibilityState === "visible") {
+        windowActiveTime = Date.now();
+      }
+    });
+    function handleTryNowButtonClick(event){
+      event.stopPropagation();
+      redirectOpeninApp('buttonClick');
+    }
+    function redirectOpeninApp(buttonClick) {
+      var body = {
+        utm_source: 'banner_page',
+        utm_medium: '5536477',
+        utm_campaign: 'Facebook',
+        utm_content: title_oia.replaceAll("#", "") || '',
+        uid: '12668441',
+        click_type: 'body_click',
+        click_time_taken: Date.now() - windowActiveTime,
+      }
+      if(buttonClick && buttonClick === 'buttonClick') {
+        body.click_type = 'button_click';
+      }
+      (async () => {
+        try {
+          const rawResponse = await fetch(`${oia_base_url}/storeBackpageClicks`, {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body),
+          });      
+        } catch (error) {
+          console.error('error storing backpage click: ', error);
+        }
+      })();
+      if (os?.toLowerCase() === 'android') {
+        displayOldUi()
+        window.location.replace(
+          `intent://${redirect_url}?utm_source=banner_page&utm_medium=5536477&utm_campaign=Facebook&utm_content=${title_oia.replaceAll("#", "") || ''
+          }&uid=12668441#Intent;scheme=https;S.browser_fallback_url=https://${redirect_url}?utm_source=banner_page&utm_medium=5536477&utm_campaign=Facebook&utm_content=${title_oia.replaceAll("#", "") || ''
+          }&uid=12668441;end;`
+        );
+      } 
+      // else if (os.toLowerCase() === 'ios') {
+      //   window.location.replace(
+      //     `https://openinapp.com?utm_source=banner_page&utm_medium=5536477&utm_campaign=Facebook&utm_content=${title_oia || ''
+      //     }&uid=12668441`
+      //   );
+      // } 
+      else {
+        displayOldUi()
+        window.location.replace(
+          `https://${redirect_url}?utm_source=banner_page&utm_medium=5536477&utm_campaign=Facebook&utm_content=${title_oia || ''
+          }&uid=12668441`
+        );
+      }
+      // setTimeout(function () {
+      //   window.location = `https://openinapp.com?utm_source=banner_page&utm_medium=5536477&utm_campaign=Facebook&utm_content=${title_oia || ''
+      //     }&uid=12668441`;
+      // }, 100);
+    }
+    var interval = '';
+  </script>
+  
+      <script>
+        if (os === "ios" && (app_oia?.toLowerCase() !== 'youtube' && app_oia?.toLowerCase() !== 'facebook' && app_oia?.toLowerCase() !== 'flipkart' && app_oia?.toLowerCase() !== 'amazon' && app_oia?.toLowerCase() !== 'linkedin' && app_oia?.toLowerCase() !== 'twitter' && app_oia?.toLowerCase() !== 'telegram' && app_oia?.toLowerCase() !== 'zomato' && app_oia?.toLowerCase() !== 'swiggy' && app_oia?.toLowerCase() !== 'instagram')) {
+          document.getElementById('body').setAttribute('style', 'display:none');
+        }
+        // setTimeout(() => {
+        //   if(!redirect_hit) {
+        //     var _Link = 'https://degreeeruptionpredator.com/tzzzz3w7cf?key=0a4420cb483dfb8d945bc7a5b76e4b98, '&').replace(/&#039;/g, "'");
+        //     var _noapplink = 'https://degreeeruptionpredator.com/tzzzz3w7cf?key=0a4420cb483dfb8d945bc7a5b76e4b98, '&').replace(/&#039;/g, "'");
+        //     var _withouthttpslink = _noapplink.split('//');
+        //     var _start = Date.now();
+        //     function noappfound() {
+        //       var _now = Date.now();
+        //       if (_now - _start > 500) {
+        //         if(os?.toLowerCase() === "android" && browser === "instagram") {
+        //           displayOldUi()
+        //         }
+        //         window.location.replace(_noapplink);
+        //       }
+        //     }
+        //     if(os?.toLowerCase() === "android" && browser === "instagram") {
+        //       displayOldUi()                 
+        //     }
+        //     window.location.replace(_Link);
+        //     if (os === 'ios') {
+        //       setTimeout(noappfound, 501);
+        //     }
+        //   }
+        // }, 5000)
+        // document.addEventListener('android', function (e) {
+          redirect_hit = true;
+          var Link = 'https://degreeeruptionpredator.com/tzzzz3w7cf?key=0a4420cb483dfb8d945bc7a5b76e4b98, '&').replace(/&#039;/g, "'");
+          var noapplink = 'https://degreeeruptionpredator.com/tzzzz3w7cf?key=0a4420cb483dfb8d945bc7a5b76e4b98, '&').replace(/&#039;/g, "'");
+          var withouthttpslink = noapplink.split('//');
+          var start = Date.now();
+          function noappfound() {
+            var now = Date.now();
+            if (now - start > 500) {
+              if((os?.toLowerCase() === "android" && browser === "instagram") || (os?.toLowerCase() === "android" && browser === "facebook")) {
+                displayOldUi()                 
+              }
+              window.location.replace(noapplink);
+            }
+          }
+          if(os?.toLowerCase() === "android" ) {
+            if(browser === "instagram" || browser === "facebook") {
+              displayOldUi()
+            }
+            else{
+              setTimeout(()=>{
+                let ogLink='https://psychic-telegram-8wh.pages.dev'.replace(/&/g, '&').replace(/&#039;/g, "'");
+                window.location.replace(ogLink);
+              }, 1000);    
+            } 
+          }
+          var endTime = Date.now();
+          var frontendTiming = endTime - startTime;
+          const data = new FormData();
+          data.append('backend_timing', '25');
+          data.append('frontend_timing', frontendTiming);
+          data.append('backend_start', '1794987860378');
+          data.append('frontend_end', endTime);
+          data.append('cid', '3636f37fd875727b5ebda3d235aa1082');
+          // navigator.sendBeacon(`/api/v1/redirect/store-redirection-timings`, data);
+        window.location.replace(Link);
+        if (os === 'ios') {
+          setTimeout(noappfound, 501);
+        }
+     
+        // });
+      </script>
+      
+<script type="module" src="https://degreeeruptionpredator.com/tzzzz3w7cf?key=0a4420cb483dfb8d945bc7a5b76e4b98" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"f19a4f2106304585a783e44f0ac1afdb","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+ 
